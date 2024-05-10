@@ -1,0 +1,65 @@
+      /* Style untuk box audio */
+      .box-audio {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 45px; /* Lebar box */
+        height: 45px; /* Tinggi box */
+        background-color: rgb(255, 255, 255); /* Warna latar belakang */
+        border-radius: 50%; /* Membuat bentuk lingkaran */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+      }
+    
+      /* Style untuk tombol audio */
+      .box-audio button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    
+      /* Style untuk ikon suara */
+      .box-audio button i {
+        font-size: 24px;
+        color :rgb(88, 88, 88);
+      }
+.view-pdf {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    margin: 0;
+    background-color: rgba(5, 5, 5, 0.842);
+    z-index: 999;
+    pointer-events: auto; /* Mengaktifkan interaksi dengan elemen */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+  /* CSS untuk menengahkan elemen dengan posisi absolut */
+  .centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 90%;
+    z-index: 1001; /* Menempatkan di atas view-pdf */
+  }
+  /* Responsif untuk tampilan perangkat seluler */
+  @media screen and (max-width: 768px) {
+    .centered {
+      width: 100%;
+      height: 90%;
+      top: 45%;
+      bottom: 10%;
+    }
+
+  }
